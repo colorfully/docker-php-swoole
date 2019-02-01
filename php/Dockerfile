@@ -89,7 +89,8 @@ RUN  pecl install /tmp/extension/redis-4.2.0.tgz \
     && docker-php-ext-enable redis
 
 
-
+RUN pecl install /tmp/extension/yar-4.2.0.tgz \
+ && docker-php-ext-enable yar
 
 
 
